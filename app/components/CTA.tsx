@@ -6,7 +6,7 @@ const CTA = () => {
     <section className="w-full py-24 px-4 flex justify-center items-center">
       <div className="grid md:grid-cols-[1fr_minmax(400px,450px)] gap-[16px] items-stretch">
         {/* Left Card */}
-        <div className="bg-[#111111] rounded-3xl p-10 flex flex-col justify-center w-[784px]">
+        <div className="CTA_Left bg-[#111111] rounded-3xl p-10 flex flex-col justify-center w-[784px] h-[570px]">
           <div>
             <div className="relative inline-flex mb-[20px]">
               {/* OUTER GLOW */}
@@ -64,7 +64,7 @@ const CTA = () => {
         </div>
 
         {/* Right Card */}
-        <div className="bg-[#111111] border border-blue-900/30 rounded-3xl p-10 flex flex-col flex-1 w-[480px]">
+        <div className="CTA_Right bg-[#111111] border border-blue-900/30 rounded-3xl p-10 flex flex-col flex-1 w-[480px] h-[570px]">
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-baseline gap-3">
               <span className="text-white text-[42px] font-semibold tracking-tight">

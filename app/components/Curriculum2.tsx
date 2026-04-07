@@ -2,6 +2,7 @@
 
 import React, { useRef } from "react";
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
+import { div } from "framer-motion/client";
 
 const testimonials = [
   {
@@ -100,97 +101,132 @@ const Curriculum2 = () => {
   };
 
   return (
-    <section className="w-full bg-black py-20 overflow-hidden">
-      {/* Header */}
-      <div className="flex justify-between items-center max-w-[1000px] mx-auto px-4 mb-10">
-        <h2 className="text-white text-2xl font-medium">
-          Join with 5K other students
-        </h2>
+    <div className="flex flex-col items-center mt-[240px]">
+      <div className="relative inline-flex mb-[32px]">
+        {/* OUTER GLOW */}
+        <div
+          className="absolute -inset-[2px] rounded-[14px] blur-[8px] opacity-60
+                  bg-[linear-gradient(120deg,#2466F2,rgba(255,255,255,0.2),#2466F2)]"
+        />
 
-        {/* Buttons */}
-        <div className="flex gap-3">
-          <button
-            onClick={() => scroll("left")}
-            className="w-10 h-10 rounded-full bg-[#161a27] text-white flex items-center justify-center hover:bg-[#1f2436]"
-          >
-            <ChevronLeft size={20} />
-          </button>
+        {/* GRADIENT BORDER */}
+        <div
+          className="relative rounded-[12px] p-[1px]
+                  bg-[linear-gradient(120deg,#2466F2,rgba(255,255,255,0.15),#2466F2)]"
+        >
+          {/* INNER CONTENT */}
+          <div className="flex items-center gap-2 h-[36px] px-4 py-2 rounded-[11px] bg-[#171B21]">
+            {/* GRADIENT DOT */}
+            <span
+              className="w-[8px] h-[8px] rounded-full
+                       bg-[radial-gradient(circle_at_30%_30%,#5A8CFF,#2466F2)]
+                       shadow-[0_0_6px_rgba(36,102,242,0.9)]"
+            />
 
-          <button
-            onClick={() => scroll("right")}
-            className="w-10 h-10 rounded-full bg-[#161a27] text-white flex items-center justify-center hover:bg-[#1f2436]"
-          >
-            <ChevronRight size={20} />
-          </button>
+            {/* TEXT */}
+            <span className="text-[14px] leading-none text-white/80">
+              Testimonials
+            </span>
+          </div>
         </div>
       </div>
+      <div className="text-[#E0E3E5] text-5xl w-[400px] text-center mb-[160px] mt-[32px]">
+        Real Results from Real People
+      </div>
+      <div>
+        <section className="Curriculum2_Slider w-full bg-black py-20 overflow-hidden">
+          {/* Header */}
+          <div className="flex justify-between items-center max-w-[1000px] mx-auto px-4 mb-10">
+            <h2 className="text-white text-2xl font-medium">
+              Join with 5K other students
+            </h2>
 
-      {/* Slider */}
-      <div
-        ref={scrollRef}
-        className="flex gap-6 overflow-x-auto px-4 scrollbar-hide scroll-smooth"
-      >
-        {testimonials.map((item, index) => {
-          if (item.type === "text") {
-            return (
-              <div
-                key={index}
-                className="min-w-[300px] h-[380px] bg-[#0c0e14] border border-blue-900/30 rounded-2xl p-6 flex flex-col"
+            {/* Buttons */}
+            <div className="flex gap-3">
+              <button
+                onClick={() => scroll("left")}
+                className="w-10 h-10 rounded-full bg-[#161a27] text-white flex items-center justify-center hover:bg-[#1f2436]"
               >
-                <img src={item.avatar} className="w-10 h-10 rounded-full" />
+                <ChevronLeft size={20} />
+              </button>
 
-                <p className="text-gray-400 mt-6 flex-1">{item.quote}</p>
+              <button
+                onClick={() => scroll("right")}
+                className="w-10 h-10 rounded-full bg-[#161a27] text-white flex items-center justify-center hover:bg-[#1f2436]"
+              >
+                <ChevronRight size={20} />
+              </button>
+            </div>
+          </div>
 
-                <div>
-                  <h4 className="text-white">{item.name}</h4>
-                  <p className="text-sm text-gray-500">{item.role}</p>
-                </div>
-              </div>
-            );
-          }
+          {/* Slider */}
+          <div
+            ref={scrollRef}
+            className="flex gap-6 overflow-x-auto px-4 scrollbar-hide scroll-smooth"
+          >
+            {testimonials.map((item, index) => {
+              if (item.type === "text") {
+                return (
+                  <div
+                    key={index}
+                    className="min-w-[300px] h-[380px] bg-[#0c0e14] border border-blue-900/30 rounded-2xl p-6 flex flex-col"
+                  >
+                    <img src={item.avatar} className="w-10 h-10 rounded-full" />
 
-          return (
-            <div
-              key={index}
-              className="min-w-[300px] h-[380px] rounded-2xl overflow-hidden relative"
-            >
-              <img
-                src={item.thumbnail}
-                className="absolute w-full h-full object-cover"
-              />
+                    <p className="text-gray-400 mt-6 flex-1">{item.quote}</p>
 
-              <div className="absolute inset-0 bg-black/50" />
+                    <div>
+                      <h4 className="text-white">{item.name}</h4>
+                      <p className="text-sm text-gray-500">{item.role}</p>
+                    </div>
+                  </div>
+                );
+              }
 
-              <div className="absolute inset-0 flex flex-col p-6">
-                <img src={item.avatar} className="w-10 h-10 rounded-full" />
+              return (
+                <div
+                  key={index}
+                  className="min-w-[300px] h-[380px] rounded-2xl overflow-hidden relative"
+                >
+                  <img
+                    src={item.thumbnail}
+                    className="absolute w-full h-full object-cover"
+                  />
 
-                <div className="flex-1 flex items-center justify-center">
-                  <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center">
-                    <Play size={20} className="text-blue-600" />
+                  <div className="absolute inset-0 bg-black/50" />
+
+                  <div className="absolute inset-0 flex flex-col p-6">
+                    <img src={item.avatar} className="w-10 h-10 rounded-full" />
+
+                    <div className="flex-1 flex items-center justify-center">
+                      <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center">
+                        <Play size={20} className="text-blue-600" />
+                      </div>
+                    </div>
+
+                    <div className="text-white">
+                      <h4>{item.name}</h4>
+                      <p className="text-sm">{item.role}</p>
+                    </div>
                   </div>
                 </div>
+              );
+            })}
+          </div>
 
-                <div className="text-white">
-                  <h4>{item.name}</h4>
-                  <p className="text-sm">{item.role}</p>
-                </div>
-              </div>
-            </div>
-          );
-        })}
+          {/* 🔥 Hide Scrollbar */}
+          <style jsx>{`
+            .scrollbar-hide::-webkit-scrollbar {
+              display: none;
+            }
+            .scrollbar-hide {
+              -ms-overflow-style: none;
+              scrollbar-width: none;
+            }
+          `}</style>
+        </section>
       </div>
-
-      {/* 🔥 Hide Scrollbar */}
-      <style jsx>{`
-        .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-        }
-        .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-        }
-      `}</style>
-    </section>
+    </div>
   );
 };
 

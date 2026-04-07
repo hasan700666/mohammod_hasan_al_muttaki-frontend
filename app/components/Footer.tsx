@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="px-20 py-16 bg-[#0B0F17] text-white">
+    <div className="lg:px-20 lg:py-16 px-10 py-12 bg-[#0B0F17] text-white">
       {/* Top Section */}
       <div className="flex justify-between items-center">
         {/* Left Text */}

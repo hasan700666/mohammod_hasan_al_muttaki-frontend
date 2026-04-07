@@ -109,10 +109,10 @@ const Curriculum = () => {
         Mastering Deep Work: A Structured Path to Peak Productivity
       </div>
       <div>
-        <section className="w-full bg-black py-24 px-4 flex justify-center font-sans">
-          <div className="max-w-[1000px] w-full grid md:grid-cols-[1fr_minmax(400px,420px)] gap-14 items-start">
+        <section className="w-full bg-black py-24 px-4 flex justify-center">
+          <div className="Curriculum_container w-[1280px] grid md:grid-cols-[1fr_minmax(400px,420px)] gap-[60px] items-start">
             {/* Left Side: Accordion */}
-            <div className="flex flex-col w-[500px] max-w-full">
+            <div className="Curriculum_left_side flex flex-col w-[560px] max-w-full">
               {courseModules.map((mod, index) => {
                 const isExpanded = expandedModules[mod.id];
                 return (
@@ -205,12 +205,12 @@ const Curriculum = () => {
             </div>
 
             {/* Right Side: Card */}
-            <div className="bg-[#111214] border border-blue-900/20 rounded-3xl p-10 flex flex-col sticky top-10 w-[440px] h-[479px]">
+            <div className="Curriculum_right_side bg-[#111214] border border-blue-900/20 rounded-3xl p-10 flex flex-col sticky top-10 w-[440px] h-[579px]">
               <h2 className="text-[#ececed] text-[24px] font-medium tracking-tight mb-8">
                 Not only video lessons!
               </h2>
 
-              <div className="flex flex-col gap-6 mb-25">
+              <div className="flex flex-col gap-6 mb-auto">
                 <div className="flex items-start gap-4">
                   <div className="mt-0.5 w-[22px] h-[22px] rounded-full bg-[#1c2235] flex justify-center items-center flex-shrink-0">
                     <BadgeCheck size={14} className="text-white" />

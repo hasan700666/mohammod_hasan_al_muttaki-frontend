@@ -20,3 +20,69 @@
 
   --color-neutral: #111111;
 }
+
+@media (max-width: 981px) {
+  .navbar_2_div {
+    width: 981px;
+    height: 95px;
+  }
+  .navbar_divider_line {
+    width: 981px;
+  }
+  .PainPoint_hero_text{
+    width: 821px;
+  }
+  .PainPoint_left_image{
+    width: 365px;
+    height: 642px;
+  }
+  .PainPoint_right_card{
+    width: 520px;
+  }
+  .Curriculum_container{
+    width: 901px;
+  }
+  .Curriculum_left_side{
+    width: 420px;
+  }
+  .Curriculum_right_side{
+    width: 420px;
+    height: 479px;
+  }
+  .Curriculum2_Slider{
+    width: 901px; 
+  }
+  .CTA_Left{
+    width: 442px;
+  }
+  .CTA_Right{
+    width: 442px;
+  }
+}
+@media (max-width: 681px) {
+  .navbar_2_div {
+    width: 681px;
+    height: 92px;
+  }
+  .navbar_divider_line {
+    width: 681px;
+  }
+}
+@media (max-width: 521px) {
+  .navbar_2_div {
+    width: 521px;
+    height: 92px;
+  }
+  .navbar_divider_line {
+    width: 521px;
+  }
+}
+@media (max-width: 421px) {
+  .navbar_2_div {
+    width: 421px;
+    height: 92px;
+  }
+  .navbar_divider_line {
+    width: 421px;
+  }
+}

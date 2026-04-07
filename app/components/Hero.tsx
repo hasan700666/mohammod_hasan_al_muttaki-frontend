@@ -15,7 +15,7 @@ const Hero = () => {
         <div
           className="absolute inset-0 opacity-[0.15]"
           style={{
-            backgroundImage: `repeating-linear-gradient(to up, #3b82f6 0px, #3b82f6 1px, transparent 1px, transparent 6px)`,
+            backgroundImage: `repeating-linear-gradient(to bottom, #3b82f6 0px, #3b82f6 1px, transparent 1px, transparent 6px)`,
           }}
         ></div>
 

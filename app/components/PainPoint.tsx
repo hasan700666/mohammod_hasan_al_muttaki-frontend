@@ -43,7 +43,7 @@ const PainPoint = () => {
         </div>
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-5xl font-semibold leading-tight w-[928px]">
+        <h2 className="PainPoint_hero_text text-3xl md:text-5xl font-semibold leading-tight w-[928px]">
           If you struggle to focus, feel overwhelmed{" "}
           <span className="text-white/60">
             by endless tasks, or procrastinate instead of making progress,
@@ -74,12 +74,12 @@ const PainPoint = () => {
       {/* Bottom section */}
       <div className="mx-auto mt-16 flex gap-8 items-center justify-center">
         {/* Left Image */}
-        <div className=" w-[526px] h-[642px] rounded-2xl overflow-hidden">
-          <Image src={Image4} alt="Working" className="object-cover" />
+        <div className="rounded-2xl overflow-hidden">
+          <Image src={Image4} alt="Working" className="PainPoint_left_image object-cover w-[526px] h-[642px]" />
         </div>
 
         {/* Right Card */}
-        <div className="bg-white/5 rounded-2xl p-8 w-[738px] h-[642px]">
+        <div className="PainPoint_right_card bg-white/5 rounded-2xl p-8 w-[738px] h-[642px]">
           {/* Top badge */}
           <div className="flex items-center justify-between gap-2 mb-[9px]">
             {/* Gradient Design */}

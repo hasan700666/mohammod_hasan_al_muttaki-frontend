@@ -56,7 +56,7 @@ const Benefits = () => {
       </div>
       <div>
         <div className="w-full flex justify-center py-20 font-sans">
-          <div className="flex flex-col w-full max-w-[320px]">
+          <div className="flex flex-col w-[380px]">
             {items.map((item, index) => (
               <div key={index} className="flex gap-8 relative">
                 {/* The absolute vertical connector line */}
