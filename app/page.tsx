@@ -3,6 +3,8 @@ import Hero from "./components/Hero";
 import PainPoint from "./components/PainPoint";
 import Benefits from "./components/Benefits";
 import CTA from "./components/CTA";
+import Curriculum from "./components/Curriculum";
+import Curriculum2 from "./components/Curriculum2";
 
 const page = () => {
   return (
@@ -15,6 +17,12 @@ const page = () => {
       </div>
       <div>
         <Benefits></Benefits>
+      </div>
+      <div>
+        <Curriculum></Curriculum>
+      </div>
+      <div>
+        <Curriculum2></Curriculum2>
       </div>
       <div>
         <CTA></CTA>
