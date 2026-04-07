@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./components/Hero";
 import PainPoint from "./components/PainPoint";
 import Benefits from "./components/Benefits";
+import CTA from "./components/CTA";
 
 const page = () => {
   return (
@@ -14,6 +15,9 @@ const page = () => {
       </div>
       <div>
         <Benefits></Benefits>
+      </div>
+      <div>
+        <CTA></CTA>
       </div>
     </div>
   );
