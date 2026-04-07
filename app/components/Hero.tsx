@@ -56,7 +56,7 @@ const Hero = () => {
         </div>
 
         {/* Heading */}
-        <h1 className="text-4xl md:text-5xl lg:text-[56px] font-medium text-white tracking-tight leading-[1.15] mb-6 w-[560px]">
+        <h1 className="HeroText text-4xl md:text-5xl lg:text-[56px] font-medium text-white tracking-tight leading-[1.15] mb-6 w-[560px]">
           Master Focus & Get <br className="hidden md:block" />
           More Done in Less Time
         </h1>
@@ -69,7 +69,7 @@ const Hero = () => {
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-col sm:flex-row items-center gap-4 mb-20">
+        <div className="flex items-center gap-4 mb-20">
           <button className="px-8 py-3 rounded-lg bg-[#2563eb] hover:bg-[#669EFF] text-white text-[15px] font-medium transition-colors shadow-[0_0_20px_rgba(37,99,235,0.3)]">
             Enroll now
           </button>

@@ -88,9 +88,6 @@
   .Curriculum_left_side{
     width: 420px;
   }
-  .Curriculum_right_side{
-    display: none;
-  }
   .Curriculum2_Slider{
     width: 625px; 
   }
@@ -128,6 +125,21 @@
   }
   .navbar_divider_line {
     width: 521px;
+  }
+  .HeroText{
+    width: 460px;
+  }
+  .PainPoint_hero_text{
+    width: 401px;
+  }
+  .PainPoint_right_card{
+    width: 481px;
+  }
+  .Benefits_text{
+    width: 401px;
+  }
+  .Curriculum2_Slider{
+    width: 481px; 
   }
 }
 @media (max-width: 421px) {

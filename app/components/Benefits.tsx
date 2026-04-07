@@ -51,7 +51,7 @@ const Benefits = () => {
           </div>
         </div>
       </div>
-      <div className="text-[#E0E3E5] text-4xl w-[600px] text-center mb-[160px] mt-[32px]">
+      <div className="Benefits_text text-[#E0E3E5] text-4xl w-[600px] text-center mb-[160px] mt-[32px]">
         A self-paced, results-driven course designed to help you
       </div>
       <div>
