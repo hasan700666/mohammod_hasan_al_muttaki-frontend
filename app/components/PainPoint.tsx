@@ -79,11 +79,11 @@ const PainPoint = () => {
         </div>
 
         {/* Right Card */}
-        <div className="bg-white/5 rounded-2xl p-8 relative w-[738px] h-[642px]">
+        <div className="bg-white/5 rounded-2xl p-8 w-[738px] h-[642px]">
           {/* Top badge */}
-          <div>
+          <div className="flex items-center justify-between gap-2 mb-[9px]">
             {/* Gradient Design */}
-            <div className="relative inline-flex mb-[32px]">
+            <div className="relative inline-flex">
               {/* OUTER GLOW */}
               <div
                 className="absolute -inset-[2px] rounded-[14px] blur-[8px] opacity-60
@@ -111,40 +111,57 @@ const PainPoint = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <div className="absolute right-4 top-6 flex flex-col gap-3">
-                <Image
-                  src={Image5}
-                  className="w-16 h-16 rounded-lg object-cover"
-                  alt=""
-                />
-                <Image
-                  src={Image6}
-                  className="w-16 h-16 rounded-lg object-cover"
-                  alt=""
-                />
-                <Image
-                  src={Image7}
-                  className="w-16 h-16 rounded-lg object-cover"
-                  alt=""
-                />
-              </div>
+            <div className="flex -space-x-3">
+              <Image
+                alt="User 1"
+                src={Image1}
+                className="w-[40px] h-[40px] object-cover rounded-full border-2 border-white/5"
+              />
+              <Image
+                alt="User 2"
+                src={Image2}
+                className="w-[40px] h-[40px] object-cover rounded-full border-2 border-white/5"
+              />
+              <Image
+                alt="User 3"
+                src={Image3}
+                className="w-[40px] h-[40px] object-cover rounded-full border-2 border-white/5"
+              />
             </div>
           </div>
 
-          {/* Text */}
-          <p className="text-white/60 mb-4">
-            The ability to concentrate deeply is the ultimate productivity hack
-          </p>
+          <div className="text-end text-[#D0D5D9] text-[15px]">
+            Join with 5K other students
+          </div>
 
-          <h3 className="text-xl md:text-2xl font-semibold">
-            And fortunately it’s a skill you can train & develop.
-          </h3>
-
-          {/* Side stacked images */}
-
-          {/* Users text */}
-          
+          <div className="flex justify-between mt-[117px]">
+            <div>
+              <div className="text-[15px] text-[#AAAEB2] w-[200px] mt-[117px]">
+                The ability to concentrate deeply is the ultimate productivity
+                hack
+              </div>
+              <div className="text-[23px] text-[#AAAEB2] w-[240px] mt-[34px]">
+                And fortunately it’s a skill you can train & develop.
+              </div>
+            </div>
+            <div className="flex flex-col gap-[8px]">
+              <Image
+                src={Image5}
+                alt=""
+                className="w-[118px] h-[120px] rounded-lg object-cover"
+              />
+              <Image
+                src={Image6}
+                alt=""
+                className="w-[118px] h-[120px] rounded-lg object-cover"
+              />
+              <Image
+                src={Image7}
+                alt=""
+                className="w-[118px] h-[120px] rounded-lg object-cover "
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>
