@@ -144,7 +144,7 @@ const PainPoint = () => {
                 And fortunately it’s a skill you can train & develop.
               </div>
             </div>
-            <div className="flex flex-col gap-[8px]">
+            <div className="PainPoint_right_card_content_2 flex flex-col gap-[8px]">
               <Image
                 src={Image5}
                 alt=""
