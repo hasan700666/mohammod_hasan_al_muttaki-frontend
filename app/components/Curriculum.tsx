@@ -105,12 +105,12 @@ const Curriculum = () => {
           </div>
         </div>
       </div>
-      <div className="text-[#E0E3E5] text-4xl w-[600px] text-center mb-[160px] mt-[32px]">
+      <div className="CCurriculum_title text-[#E0E3E5] text-4xl w-[640px] text-center mb-[160px] mt-[32px]">
         Mastering Deep Work: A Structured Path to Peak Productivity
       </div>
       <div>
         <section className="w-full bg-black py-24 px-4 flex justify-center">
-          <div className="Curriculum_container w-[1280px] grid md:grid-cols-[1fr_minmax(400px,420px)] gap-[60px] items-start">
+          <div className="Curriculum_container w-[1280px] flex gap-[60px] items-start">
             {/* Left Side: Accordion */}
             <div className="Curriculum_left_side flex flex-col w-[560px] max-w-full">
               {courseModules.map((mod, index) => {

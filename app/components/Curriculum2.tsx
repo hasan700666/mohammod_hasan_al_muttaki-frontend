@@ -136,7 +136,7 @@ const Curriculum2 = () => {
       <div>
         <section className="Curriculum2_Slider w-full bg-black py-20 overflow-hidden">
           {/* Header */}
-          <div className="flex justify-between items-center max-w-[1000px] mx-auto px-4 mb-10">
+          <div className="flex justify-between items-center max-w-[1000px] mx-auto px-10 mb-10">
             <h2 className="text-white text-2xl font-medium">
               Join with 5K other students
             </h2>

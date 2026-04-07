@@ -56,13 +56,13 @@ const Hero = () => {
         </div>
 
         {/* Heading */}
-        <h1 className="text-4xl md:text-5xl lg:text-[56px] font-medium text-white tracking-tight leading-[1.15] mb-6">
+        <h1 className="text-4xl md:text-5xl lg:text-[56px] font-medium text-white tracking-tight leading-[1.15] mb-6 w-[560px]">
           Master Focus & Get <br className="hidden md:block" />
           More Done in Less Time
         </h1>
 
         {/* Subheading */}
-        <p className="text-base md:text-[17px] text-zinc-400 max-w-2xl mx-auto leading-relaxed mb-10 font-light">
+        <p className="text-base md:text-[17px] text-zinc-400 max-w-2xl mx-auto leading-relaxed mb-10 font-light w-[460px]">
           A step-by-step system to eliminate procrastination, train your{" "}
           <br className="hidden md:block" />
           brain for deep work, and boost productivity effortlessly.

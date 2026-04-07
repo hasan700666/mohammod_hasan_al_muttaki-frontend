@@ -44,7 +44,7 @@ const Navbar = () => {
             <button className="w-[116px] h-[47px] bg-[#2466F2] rounded-[10px] shadow-md hover:bg-[#669EFF] font-semibold md:block hidden">
               Enroll now
             </button>
-            <button className="bg-[#2466F2] rounded-full translate-x-8 hover:bg-[#669EFF] md:hidden flex items-center gap-1 px-2 py-2">
+            <button className="bg-[#2466F2] rounded-full hover:bg-[#669EFF] md:hidden flex items-center gap-1 px-2 py-2">
               <IoIosArrowDropdown className="text-[26px]" />
             </button>
           </div>

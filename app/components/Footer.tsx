@@ -9,13 +9,13 @@ const Footer = () => {
   return (
     <div className="lg:px-20 lg:py-16 px-10 py-12 bg-[#0B0F17] text-white">
       {/* Top Section */}
-      <div className="flex justify-between items-center">
+      <div className="footerSection flex justify-between items-center">
         {/* Left Text */}
         <div>
-          <h1 className="text-4xl font-semibold leading-tight">
+          <h1 className="text-4xl font-semibold leading-tight footer_1_text">
             The Deep <br /> Work Blueprint
           </h1>
-          <p className="text-gray-400 mt-4 text-sm">
+          <p className="text-gray-400 mt-4 text-sm footer_2_text">
             Master Focus & Get More Done in Less Time
           </p>
         </div>
@@ -57,10 +57,10 @@ const Footer = () => {
       <div className="mt-16 h-[1px] w-full bg-gradient-to-r from-transparent via-[#2466F2] to-transparent"></div>
 
       {/* Bottom Section */}
-      <div className="flex justify-between items-center mt-6 text-sm text-gray-400">
+      <div className="footerCpyAndLinks flex justify-between items-center mt-6 text-sm text-gray-400">
         <p>© Copyright 2024, All Rights Reserved</p>
 
-        <div className="flex gap-6">
+        <div className="flex gap-6 footer_links">
           <a href="#" className="hover:text-white">
             Terms & conditions
           </a>
