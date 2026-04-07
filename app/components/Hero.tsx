@@ -62,7 +62,7 @@ const Hero = () => {
         </h1>
 
         {/* Subheading */}
-        <p className="text-base md:text-[17px] text-zinc-400 max-w-2xl mx-auto leading-relaxed mb-10 font-light w-[460px]">
+        <p className="HeroText2 text-base md:text-[17px] text-zinc-400 max-w-2xl mx-auto leading-relaxed mb-10 font-light w-[356px]">
           A step-by-step system to eliminate procrastination, train your{" "}
           <br className="hidden md:block" />
           brain for deep work, and boost productivity effortlessly.

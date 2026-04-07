@@ -150,4 +150,22 @@
   .navbar_divider_line {
     width: 421px;
   }
+  .HeroText{
+    width: 356px;
+  }
+  .HeroText2{
+    width: 340px;
+  }
+  .PainPoint_hero_text{
+    width: 348px;
+  }
+  .PainPoint_right_card_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .PainPoint_right_card_content_1{
+    margin-top: 0px;
+  }
 }

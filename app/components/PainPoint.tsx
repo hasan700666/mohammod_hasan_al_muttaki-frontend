@@ -134,9 +134,9 @@ const PainPoint = () => {
             Join with 5K other students
           </div>
 
-          <div className="flex justify-between mt-[117px]">
+          <div className="PainPoint_right_card_content flex justify-between mt-[117px]">
             <div>
-              <div className="text-[15px] text-[#AAAEB2] w-[200px] mt-[117px]">
+              <div className="PainPoint_right_card_content_1 text-[15px] text-[#AAAEB2] w-[200px] mt-[117px]">
                 The ability to concentrate deeply is the ultimate productivity
                 hack
               </div>
